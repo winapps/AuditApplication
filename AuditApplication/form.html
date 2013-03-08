@@ -1,0 +1,87 @@
+﻿<html>
+<head>
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.1.0/css/ui-dark.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.1.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.1.0/js/ui.js"></script>
+
+    <!-- AuditApplication references -->
+    <link href="/css/default.css" rel="stylesheet" />
+    <script src="/js/default.js"></script>
+    <script src="/js/worker.js"></script>
+</head>
+<body>
+    <div class="contentLeft">
+        <div class="btn_back" >
+        <a href="default.html"><img src="images/backbutton.png" /></a>
+            </div>
+        <div class="formContainer">
+            <div class="fieldContainer">
+                <div class="left">Name of Well Site</div>
+                <div class="right">
+                    <input type="text" class="Textbox" id="wellsitename"/>
+                </div>
+            </div>
+            <div class="fieldContainer">
+                <div class="left">Operator</div>
+                <div class="right">
+                    <input type="text" class="Textbox" id="operator"/>
+                </div>
+            </div>
+            <div class="fieldContainer">
+                <div class="left">Well Serial Number</div>
+                <div class="right">
+                    <input type="text" class="Textbox" id="serialnumber" />
+                </div>
+            </div>
+            <div class="fieldContainer">
+                <div class="left">State</div>
+                <div class="right">
+                    <input type="text" class="Textbox" id="state" />
+                </div>
+            </div>
+            <div class="fieldContainer">
+                <div class="left">Country</div>
+                <div class="right">
+                    <input type="text" class="Textbox" id ="country"/>
+                </div>
+            </div>
+            <div class="fieldContainer">
+                <div class="left">Inspectors</div>
+                <div class="right">
+                    <input type="text" class="Textbox" id="inspectors" />
+                </div>
+            </div>
+            <div class="fieldContainer">
+                <div class="left">Weather Conditions</div>
+                <div class="right">
+                    <input type="text" class="Textbox" id="weather"/>
+                </div>
+            </div>
+            <div class="fieldContainer">
+
+                <div class="right">
+                    <span class="fRight">
+                        <input type="submit" value="Save Form" class="btn_Save blue" onclick="savedata()" /></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="contentRight">
+        <div class="imgPreview">
+            <input type="button" style="color:#000;"  value="Edit Picture" />
+            <img src="" id="imgCapture" height="350" width="300"/>
+        </div>
+        <div class="uploadType">
+            <div>
+                <span class="fLeft"><img src="images/cam.png" /></span> <span class="fRight" onclick="takepicture()" >Take a Picture</span>
+            </div>
+            <div>
+                <span class="fLeft"><img src="images/gallery.png" /></span><span class="fRight" onclick="pickImage()"> Upload from Gallery</span>
+            </div>
+        </div>
+        <div class="fLeft"><input type="submit" value="Fill Form" class="btn_Submit white" style="color:#000;" onclick="filldata()" /></div>
+       <div class="fRight"><input type="submit" value="Submit Form" class="btn_Submit white" style="color:#000;" onclick="submit()" /></div>
+    </div>
+</body>
+</html>
