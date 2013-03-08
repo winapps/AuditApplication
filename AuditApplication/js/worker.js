@@ -9,7 +9,7 @@ function takepicture() {
     var captureUI = new Windows.Media.Capture.CameraCaptureUI();
     captureUI.captureFileAsync(Windows.Media.Capture.CameraCaptureUIMode.photo).then(function (capturedItem) {
         if (capturedItem) {
-            document.getElementById("message").innerHTML = "User captured a photo."
+            //document.getElementById("message").innerHTML = "User captured a photo."
             document.getElementById('imgCapture').src
                     = window.URL.createObjectURL(data);            
             storeimage(capturedItem);
